@@ -9,9 +9,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
- 
+<!-- NAVBAR -->
 <nav class="bg-lime-100 border-gray-200">
-  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 md:p-1">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 md:p-0">
     <a href="#" class="flex items-center">
         <img src="../../assets/logo.png" class="h-8 mr-3" alt="Flowbite Logo" />
         <span class="self-center text-lime-950 md:text-lime-950 text-2xl font-semibold whitespace-nowrap">Foodie</span>
@@ -22,23 +22,119 @@
     </button>
     <div class="w-full md:block md:w-auto hidden" id="navbar-default">
       <ul class="font-medium flex flex-col p-4 md:p-4 mt-4  rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-lime-100 md:dark:bg-gray-900 bg-lime-100 dark:border-gray-700">
-        <li class="mt-2 md:mt-1">
-          <a href="#" class="block md:p-2 md:px-4  py-2 pl-3 pr-4 text-lime-100 bg-lime-800 rounded md:bg-lime-800 md:text-blue-700 md:p-0 text-center md:text-lime-100" aria-current="page">Home</a>
+        <li class="mt-2 md:mt-1 hidden">
+          <a href="#" class="block md:p-2 md:px-4  py-2 pl-1 pr-1 text-lime-100 bg-lime-800 rounded md:bg-lime-800 md:text-blue-700 md:p-0 text-center md:text-lime-100">Logout</a>
         </li>
-        <li class="mt-2 md:mt-1">
-          <a href="#" class="block md:p-2 md:px-4  py-2 pl-3 pr-4 text-lime rounded hover:bg-lime-950 text-lime-900 md:hover:bg-lime-800 md:border-0 md:hover:text-lime-100 md:p-0 dark:text-white md:bg-transparent md:dark:hover:text-lime-100 text-center  bg-lime-800">About</a>
+        <li class="mt-2 md:mt-1 visible">
+          <a href="#" class="block md:p-2 md:px-4  py-2 pl-1 pr-1 text-lime-100 bg-lime-800 rounded md:bg-lime-800 md:text-blue-700 md:p-0 text-center md:text-lime-100">Login/Register</a>
         </li>
-        <li class="mt-2 md:mt-1">
-          <a href="#" class="block md:p-2 md:px-4 text-center py-2 pl-3 pr-4 text-lime rounded hover:bg-lime-950 text-lime-900 md:hover:bg-lime-800 md:border-0 md:hover:text-lime-100 md:p-0 dark:text-white md:bg-transparent md:dark:hover:text-lime-100 bg-lime-800">Services</a>
+        <li class="mt-8 md:mt-0 hidden">
+          <img class="bg-lime-90 inline-block h-12 w-12 rounded-full hover:cursor-pointer	" alt="Image placeholder" src="../../assets/avtar.png">
         </li>
-        <li class="mt-8 md:mt-1 hidden">
-          <img class="inline-block h-12 w-12 rounded-full border border-lime-800 object-cover object-center hover:cursor-pointer	" alt="Image placeholder" src="../../assets/avtar.png">
-        </li>
+        
       </ul>
     </div>
   </div>
 </nav>
 
-  <script src="home.js"></script>
+<!-- SLIDER -->
+<div class="md:w-2xlmx-auto">
+
+	<div id="default-carousel" class="relative" data-carousel="static">
+        <!-- Carousel wrapper -->
+        <div class="overflow-hidden relative h-56 md:h-96">
+            <!-- Item 1 -->
+            <div class="bg-lime-950 hidden duration-800 ease-in-out" data-carousel-item>
+                <img src="../../assets/banner2.png" class="visible md:visible md:scale-y-50 block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="../../assets/banner3.jpg" class="block absolute top-1/2
+                left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+            </div>
+            <!-- Item 3 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="../../assets/banner4.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                <div class=" bg-gradient-to-b from-lime-100 to-transparent block h-96 w-96 absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"></div>
+            </div>
+        </div>
+        <!-- Slider indicators -->
+        <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+        </div>
+        <!-- Slider controls -->
+        <button type="button" class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group" data-carousel-prev>
+            <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white-100 group-hover:bg-gray-800/60  dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-5 h-5 text-lime-100 sm:w-6 sm:h-6 " fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                <span class="hidden">Previous</span>
+            </span>
+        </button>
+        <button type="button" class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next>
+            <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white-100 group-hover:bg-gray-800/60  dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-5 h-5 text-lime-100 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                <span class="hidden">Next</span>
+            </span>
+        </button>
+    </div>
+
+
+</div>
+
+<!-- SERVICE -->
+<div class="h-20 w-full bg-lime-300 flex justify-center items-center text-2xl font-semibold">
+  Services
+</div>
+<div class="h-full w-full p-8 bg-lime-100 flex md:items-center md:justify-center flex-col md:flex-row">
+  <div class="md:mt-0 flex h-full items-center justify-center px-4 drop-shadow-lg">
+    <div class="w-72 h-auto overflow-hidden  bg-lime-950 shadow-md duration-200 hover:scale-105 hover:shadow-xl">
+      <img src="../../assets/ser1.jpg" alt="demo" class="h-auto w-full" />
+      <div class="p-5">
+        <p class="text-medium mb-5 text-lime-100">Search the recipe by available ingredients at home</p>
+        <button class="w-full rounded-md bg-lime-100  py-2 text-lime-800 hover:bg-lime-800 hover:text-lime-300 hover:shadow-md duration-75">Search Recipe</button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="mt-8 md:mt-0 flex h-full items-center justify-center px-4 drop-shadow-lg">
+    <div class="w-72 h-auto overflow-hidden  bg-lime-950 shadow-md duration-200 hover:scale-105 hover:shadow-xl">
+      <img src="../../assets/ser2.jpg" alt="plant" class="h-auto w-full" />
+      <div class="p-5">
+        <p class="text-medium mb-5 text-lime-100">Plan a meal for planning healthy life</p>
+        <button class="w-full rounded-md bg-lime-100  py-2 text-lime-800 hover:bg-lime-800 hover:text-lime-300 hover:shadow-md duration-75">Plan a meal</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-8 md:mt-0 flex h-full items-center justify-center px-4 drop-shadow-lg">
+    <div class="w-72 h-auto overflow-hidden  bg-lime-950 shadow-md duration-200 hover:scale-105 hover:shadow-xl">
+      <img src="../../assets/serv4.avif" alt="plant" class="h-full w-full" />
+      <div class="p-5">
+        <p class="text-medium mb-5 text-lime-100">Don't waste food instead donate needy</p>
+        <button class="w-full rounded-md bg-lime-100  py-2 text-lime-800 hover:bg-lime-800 hover:text-lime-300 hover:shadow-md duration-75">Donate</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="w-2xl mx-auto">
+	<footer class="p-4 bg-lime-800 shadow md:flex md:items-center md:justify-between md:p-6 md:bg-lime-800">
+		<span class="text-sm text-lime-100 sm:text-center md:text-lime-100">© 2023 <a href="https://flowbite.com" class="hover:underline" target="_blank">Foodie™</a>. All Rights Reserved.
+    </span>
+		<ul class="flex flex-wrap items-center mt-3 sm:mt-0">
+			<li>
+				<a href="#" class="mr-4 text-sm text-lime-100 hover:underline md:mr-6 ">About</a>
+			</li>
+			<li>
+				<a href="#" class="text-sm text-lime-100 hover:underline">Contact</a>
+			</li>
+		</ul>
+	</footer>
+</div>
+
+<script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+<script src="home.js"></script>
 </body>
 </html>
