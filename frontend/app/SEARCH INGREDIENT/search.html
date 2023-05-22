@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Recipe</title>
+  <link rel="stylesheet" href="search.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="header flex items-center justify-center bg-gradient-to-br from-lime-300 to-green-500 w-full h-20 md:h-20">
+      <h1 class="text-2xl text-green-900 text-bold" >Search Recipe</h1>
+    </div>
+    <div class="search w-full h-28 bg-white px-4 outline-0 border-none flex items-center justify-center">
+        <div class="relative">
+            <input type="search" id="default-search" class="block p-4 pl-5 pr-20 w-full text-sm text-gray-900 bg-gray-100 border-0 outline-0" placeholder="Search" required>
+            <button type="submit" class="text-white absolute right-0 bottom-0 h-full bg-gradient-to-br from-lime-300 to-green-500 hover:bg-gradient-to-bl from-lime-300 to-green-500 outline-none font-medium  text-sm px-4 py-2">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+            </button>
+        </div>
+    </div>
+    
+  <div class="Output"></div>
+  <script src="search.js"></script>
+</body>
+</html>
