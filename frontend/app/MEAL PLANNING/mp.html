@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MEAL PLANNING</title>
+  <link rel="stylesheet" href="mp.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+  <div class="main w-full h-screen bg-gradient-to-br from-lime-300 to-green-500">
+    <div class="navigation grid grid-rows-2 grid-flow-col gap-0 w-full h-52 drop-shadow-xl bg-white">
+      <div onclick="Routing(1)" class=" group flex items-center flex-col w-full h-full bg-gray-100 border border-lime-500 justify-center hover:bg-green-500">
+        <span class="material-icons text-3xl group-hover:text-white text-green-500 ">
+          checklist
+          </span>
+          <p class="mt-2 group-hover:text-white text-green-500">Make Grocery List</p>
+      </div>
+      <div onclick="Routing(3)" class=" group flex items-center flex-col w-full h-full bg-gray-100 border border-lime-500 justify-center hover:bg-green-500">
+        <span class="material-icons text-3xl group-hover:text-white text-green-500 ">
+          auto_delete
+          </span>
+          <p class="mt-2 group-hover:text-white text-green-500">Set expiry reminder</p>
+      </div>
+      <div onclick="Routing(2)" class=" group flex items-center flex-col w-full h-full bg-gray-100 border border-lime-500 justify-center hover:bg-green-500">
+        <span class="material-icons text-3xl group-hover:text-white text-green-500 ">
+          calendar_month
+          </span>
+          <p class="mt-2 group-hover:text-white text-green-500">Plan a meal</p>
+      </div>
+      <div onclick="Routing(4)" class=" group flex items-center flex-col w-full h-full bg-gray-100 border border-lime-500 justify-center hover:bg-green-500">
+        <span class="material-icons text-3xl group-hover:text-white text-green-500 ">
+          shopping_bag
+          </span>
+          <p class="mt-2 group-hover:text-white text-green-500">Shop Grocery Online</p>
+      </div>
+    </div>
+    <div class="result-slider overflow-hidden flex flex-col flex-wrap w-full h-[calc(100vh-13rem)] bg-red-100">
+      <div id="list" class=" card  w-full h-[calc(100vh-13rem)] bg-red-500 p-2">
+        <p>MAKE A GROCERY LIST</p>
+      </div>
+      <div id="meal" class=" card w-full h-[calc(100vh-13rem)] bg-red-200 p-2">
+        <p>PLAN A MEAL</p>
+      </div>
+      <div id="expiry" class=" card w-full h-[calc(100vh-13rem)] bg-red-300 p-2">
+        <p>SET EXPIRY DATE</p>
+      </div>
+      <div id="shop" class=" card w-full h-[calc(100vh-13rem)] bg-red-800 p-2">
+        <p>SHOP ONLINE</p>
+      </div>
+    </div>
+  </div>
+  <script src="mp.js"></script>
+</body>
+</html>
