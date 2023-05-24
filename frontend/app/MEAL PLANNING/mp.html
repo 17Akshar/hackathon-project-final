@@ -38,10 +38,25 @@
           <p class="mt-2 group-hover:text-white text-green-500">Shop Online</p>
     </a>
     </div>
-    <div class="result-slider overflow-hidden flex flex-col flex-wrap w-full h-[calc(100vh-13rem)] bg-red-100">
-      <section id="list-section" class=" w-full h-[calc(100vh-13rem)] bg-gray-900 ">
-        <div id="list" class=" card  w-full h-[calc(100vh-13rem)] bg-red-500 p-2">
-          <p>MAKE A GROCERY LIST</p>
+    <div class="result-slider overflow-hidden flex flex-col flex-wrap w-full h-[calc(100vh-13rem)]">
+      <section id="list-section" class=" w-full h-[calc(100vh-13rem)] ">
+        <div id="list" class=" card  w-full h-[calc(100vh-13rem)]  p-2">
+         <div class="title w-full h-14 bg-gray-100 flex items-center justify-center">
+          <h1 class="text-lg text-green-600">Make a Grocery List</h1>
+         </div>
+         <div class="add-list w-full h-14">
+          <div class="p-2 shadow w-full">
+            <div class="flex justify-evenly	 items-center">
+              <input type="text" class="w-full bg-gray-100 rounded font-semibold text-green-600 p-2 mr-2  focus:outline-none " >
+              <button type="button" class="btn group bg-lime-300 flex items-center hover:bg-green-600 hover:text-white px-4 py-2 font-medium rounded">
+                <span class="material-icons text-green-600 group-hover:text-white ">
+                  add_box
+                  </span>
+              </button>
+            </div>
+         </div>
+        </div>
+        <div class="table w-full h-full bg-red-300">
         </div>
       </section>
       <section id="meal-section" class=" w-full h-[calc(100vh-13rem)] bg-gray-900 ">
